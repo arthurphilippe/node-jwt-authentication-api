@@ -6,6 +6,6 @@ if [[ -f launch.conf ]]; then
 	logDestination=$(cat launch.conf)
 fi
 
-echo $logDestination
+echo "Writting to $logDestination"
 
-node server.js > $logDestination
+node server.js >> $logDestination
